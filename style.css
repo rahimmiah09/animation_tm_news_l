@@ -1,0 +1,118 @@
+/* fonts link */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+/* common css */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Common CSS */
+/* common css end */
+.animation {
+  padding: 70px;
+  font-family: Playfair Display, serif;
+}
+.container {
+  text-align: center;
+}
+
+.item1,
+.item2,
+.item3 {
+  display: inline-block;
+  margin-right: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: animate 5s infinite 3s;
+  position: relative;
+}
+
+/* Keyframes for Animation */
+@keyframes animate {
+  0% {
+    background-color: green;
+    transform: translate(0px, 0);
+  }
+  25% {
+    background-color: rgb(206, 219, 25);
+    transform: translate(-100px, 0);
+  }
+  50% {
+    background-color: blue;
+    transform: translate(-100px, 100px);
+  }
+  75% {
+    background-color: rgb(216, 25, 191);
+    transform: translate(0px, 100px);
+  }
+  100% {
+    background-color: aqua;
+    transform: translate(0px, 0);
+  }
+}
+
+.n_letter {
+  margin-top: 60px;
+  padding: 70px;
+  background-color: #f0f0f0;
+}
+.container2 {
+  /* border: 2px solid blue; */
+  text-align: center;
+}
+.s_up {
+  text-align: center;
+}
+.title {
+  margin-bottom: 40px;
+  font-family: Playfair Display, serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: #333333;
+}
+form {
+  width: 375px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  position: relative;
+}
+
+form input {
+  font-family: "Playfair Display", serif;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  width: 350px;
+  height: 45px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid #333333;
+  padding: 10px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+form button:focus {
+  outline: none; /* Cleaner syntax */
+}
+
+form button img {
+  width: 40px; /* You can add width or height to the image */
+  height: auto;
+}
